@@ -17,3 +17,4 @@ resource "aws_sns_topic" "main_tom" {
 
   policy = "${var.policy}"
 }
+  
