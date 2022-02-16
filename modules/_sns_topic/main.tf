@@ -11,3 +11,9 @@ resource "aws_sns_topic" "main" {
 
   policy = "${var.policy}"
 }
+  
+resource "aws_sns_topic" "main_tom" {
+  name = "${local.name}_tom"
+
+  policy = "${var.policy}"
+}
