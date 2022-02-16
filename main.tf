@@ -17,3 +17,5 @@ module "sns_topic_public_subscribe" {
 module "sns_topic_public_subscribe_publish" {
   source = "modules/sns-topic-public-subscribe-publish"
 }
+
+  
