@@ -10,6 +10,9 @@ resource "aws_sns_topic" "main" {
   name = "${local.name}"
 
   policy = "${var.policy}"
+  tags = {
+    Name = "Ferd Farkle"
+  }
 }
 
   resource "aws_sns_topic" "main_2" {
