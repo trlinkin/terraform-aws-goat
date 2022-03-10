@@ -12,3 +12,10 @@ resource "aws_s3_bucket" "main" {
   acl    = "${var.acl}"
   policy = "${var.policy}"
 }
+
+  resource "aws_s3_bucket" "unsecure" {
+  bucket = "${local.bucket}"
+
+  acl    = "${var.acl}"
+  policy = "${var.policy}"
+}
